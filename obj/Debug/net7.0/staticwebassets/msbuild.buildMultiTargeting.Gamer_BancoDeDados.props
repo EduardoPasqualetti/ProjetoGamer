@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Gamer_BancoDeDados.props" />
+</Project>

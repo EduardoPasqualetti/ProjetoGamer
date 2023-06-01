@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Gamer_BancoDeDados.props" />
+</Project>

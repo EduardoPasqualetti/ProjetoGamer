@@ -1,0 +1,54 @@
+@model Equipe
+
+@{
+    ViewData["Title"] = "Equipe";
+}
+
+<h1> Tela de Equipes</h1>
+
+@*Parte de cadastrar a equipe*@
+<form method="post" action='@Url.Action("Cadastrar")' enctype="multipart/form-data">
+@*cadastrar nome*@
+    <label for="">Nome</label>
+    <input type="text" name="Nome" required>
+@*cadastrar a imagem, precisa do type=file*@
+    <label for="">Imagem</label>
+    <input type="file" name="Imagem">
+@*bota para cadastrar, o submit vai submeter e enviar o cadastro*@
+    <button type="submit">Cadastrar</button>
+
+</form>
+
+
+@* Criando tabela de equipe *@
+<table class="table table-striped table-responsive">
+    @* cabeça da tabela *@
+    <tr>
+        <th>Id</th>
+        <th>Nome</th>
+        <th>Imagem</th>
+        <th>Ações</th>
+    </tr>
+
+    @* corpo da tabela *@
+    <tbody>
+
+        @* viewbag é um objeto da classe equipe *@
+        @foreach (Equipe equipe in ViewBag.Equipe)
+        {
+            <tr>
+                <td>@equipe.IdEquipe</td>
+                <td>@equipe.Nome</td>
+                @*para exibir a imagem cadastrada*@
+                <td>
+                    <img src="/img/Equipes/@equipe.Imagem" alt="Imagem da equipe @equipe.Nome" width="50px">
+                </td>
+                @*excluir uma equipe*@
+                <td>
+                    <a asp-area="" asp-controller="Equipe" asp-action="Excluir" asp-route-id="@equipe.IdEquipe" >Excluir</a>
+                </td>
+            </tr>
+        }
+
+    </tbody>
+</table>
