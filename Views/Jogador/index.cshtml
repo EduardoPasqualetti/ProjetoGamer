@@ -1,0 +1,55 @@
+@model Jogador
+
+@{
+    ViewData["Title"] = "Equipe";
+}
+
+<h1>Tela de Jogadores</h1>
+
+<form action="">
+    <label for="">Equipe</label>
+    <input type="checkbox" name="Equipe">
+    <label for="">Nome</label>
+    <input type="text" name="Nome" required>
+
+    <label for="">Email</label>
+    <input type="email" name="Imagem">
+
+    <label for="">Senha</label>
+    <input type="password" name="Senha">
+
+    <button type="submit">Cadastrar</button>
+
+</form>
+
+<table class="table table-striped table-responsive">
+    <tr>
+        <th>Id</th>
+        <th>Nome</th>
+        <th>Imagem da Equipe</th>
+        <th>Ações</th>
+    </tr>
+
+    <tbody>
+
+        @foreach (Jogador jogadores in ViewBag.Jogador)
+        {
+            <tr>
+                <td>@jogadores.IdJogador</td>
+                <td>@jogadores.Nome</td>
+                <td>@jogadores.Equipe</td>
+                @* <td>
+                    <img src="/img/Equipes/@equipe.Imagem" alt="Imagem da equipe @equipe.Nome" width="50px">
+                </td> *@
+                @*excluir uma equipe*@
+                @* <td>
+                    <a asp-area="" asp-controller="Equipe" asp-action="Excluir" asp-route-id="@equipe.IdEquipe" >Excluir</a>
+                </td>
+                <td>
+                    <a asp-area="" asp-controller="Equipe" asp-action="Editar" asp-route-id="@equipe.IdEquipe">Editar</a>
+                </td> *@
+            </tr>
+        }
+
+    </tbody>
+</table>

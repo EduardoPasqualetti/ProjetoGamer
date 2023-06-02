@@ -32,7 +32,7 @@
 
     @* corpo da tabela *@
     <tbody>
-
+0
         @* viewbag é um objeto da classe equipe *@
         @foreach (Equipe equipe in ViewBag.Equipe)
         {
@@ -46,6 +46,9 @@
                 @*excluir uma equipe*@
                 <td>
                     <a asp-area="" asp-controller="Equipe" asp-action="Excluir" asp-route-id="@equipe.IdEquipe" >Excluir</a>
+                </td>
+                <td>
+                    <a asp-area="" asp-controller="Equipe" asp-action="Editar" asp-route-id="@equipe.IdEquipe">Editar</a>
                 </td>
             </tr>
         }

@@ -10574,11 +10574,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\49802002810\\Desktop\\Projeto_Gamer\\Gamer_BancoDeDados.csproj",
+      "projectUniqueName": "C:\\Users\\49802002810\\Desktop\\ProjetoGamer\\Gamer_BancoDeDados.csproj",
       "projectName": "Gamer_BancoDeDados",
-      "projectPath": "C:\\Users\\49802002810\\Desktop\\Projeto_Gamer\\Gamer_BancoDeDados.csproj",
+      "projectPath": "C:\\Users\\49802002810\\Desktop\\ProjetoGamer\\Gamer_BancoDeDados.csproj",
       "packagesPath": "C:\\Users\\49802002810\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\49802002810\\Desktop\\Projeto_Gamer\\obj\\",
+      "outputPath": "C:\\Users\\49802002810\\Desktop\\ProjetoGamer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\49802002810\\AppData\\Roaming\\NuGet\\NuGet.Config",
