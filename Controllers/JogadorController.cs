@@ -1,26 +1,23 @@
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
 using Gamer_BancoDeDados.Infra;
+using Gamer_BancoDeDados.Models;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 
-
-namespace ProjetoGamer.Controllers
+namespace Gamer_BancoDeDados.Controllers
 {
     [Route("[controller]")]
-    public class JogaodorController : Controller
+    public class JogadorController : Controller
     {
-        private readonly ILogger<JogaodorController> _logger;
+        private readonly ILogger<JogadorController> _logger;
 
-        public JogaodorController(ILogger<JogaodorController> logger)
+        public JogadorController(ILogger<JogadorController> logger)
         {
             _logger = logger;
         }
 
         Context c = new Context();
+
+    
+        [Route("Listar")]
         public IActionResult Index()
         {
             ViewBag.Jogador = c.Jogador.ToList();
@@ -28,6 +25,31 @@ namespace ProjetoGamer.Controllers
             
             return View();
         }
+
+
+        [Route("Cadastrar")]
+        public IActionResult Cadastrar(IFormCollection form)
+        {
+          
+           Jogador novoJogador = new Jogador();
+
+
+            novoJogador.Nome = form["Nome"].ToString();
+            novoJogador.Email = form["Email"].ToString();
+            novoJogador.Senha = form["Senha"].ToString();
+
+
+            c.Jogador.Add(novoJogador);
+
+            c.SaveChanges();
+
+            // atualiza a lista 
+            ViewBag.Jogador = c.Jogador.ToList();
+
+            return LocalRedirect("~/Jogador/Listar");
+            
+        }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
