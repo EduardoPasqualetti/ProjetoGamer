@@ -25,6 +25,10 @@
       "PackagePath": "staticwebassets\\img\\Equipes\\corinthians.png"
     },
     {
+      "Id": "C:\\Users\\49802002810\\Desktop\\ProjetoGamer\\wwwroot\\img\\Equipes\\flamengo.png",
+      "PackagePath": "staticwebassets\\img\\Equipes\\flamengo.png"
+    },
+    {
       "Id": "C:\\Users\\49802002810\\Desktop\\ProjetoGamer\\wwwroot\\img\\Equipes\\flu.png",
       "PackagePath": "staticwebassets\\img\\Equipes\\flu.png"
     },
@@ -47,6 +51,10 @@
     {
       "Id": "C:\\Users\\49802002810\\Desktop\\ProjetoGamer\\wwwroot\\img\\Equipes\\guty.jfif",
       "PackagePath": "staticwebassets\\img\\Equipes\\guty.jfif"
+    },
+    {
+      "Id": "C:\\Users\\49802002810\\Desktop\\ProjetoGamer\\wwwroot\\img\\Equipes\\palmeiras.jpg",
+      "PackagePath": "staticwebassets\\img\\Equipes\\palmeiras.jpg"
     },
     {
       "Id": "C:\\Users\\49802002810\\Desktop\\ProjetoGamer\\wwwroot\\img\\Equipes\\santos.png",

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "tGUCmBDIx5K2FS7JcCrZIBu220zNa0/RI37ZysMpbyE=",
+  "Hash": "ejiEDXc57EiYkx2TaTbdkBJzAh59C+o27p/29vWk94A=",
   "Source": "Gamer_BancoDeDados",
   "BasePath": "_content/Gamer_BancoDeDados",
   "Mode": "Default",
@@ -136,6 +136,23 @@
       "OriginalItemSpec": "wwwroot\\img\\Equipes\\Cuiaba.png"
     },
     {
+      "Identity": "C:\\Users\\49802002810\\Desktop\\ProjetoGamer\\wwwroot\\img\\Equipes\\flamengo.png",
+      "SourceId": "Gamer_BancoDeDados",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\49802002810\\Desktop\\ProjetoGamer\\wwwroot\\",
+      "BasePath": "_content/Gamer_BancoDeDados",
+      "RelativePath": "img/Equipes/flamengo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Equipes\\flamengo.png"
+    },
+    {
       "Identity": "C:\\Users\\49802002810\\Desktop\\ProjetoGamer\\wwwroot\\img\\Equipes\\flu.png",
       "SourceId": "Gamer_BancoDeDados",
       "SourceType": "Discovered",
@@ -236,6 +253,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\Equipes\\guty.jfif"
+    },
+    {
+      "Identity": "C:\\Users\\49802002810\\Desktop\\ProjetoGamer\\wwwroot\\img\\Equipes\\palmeiras.jpg",
+      "SourceId": "Gamer_BancoDeDados",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\49802002810\\Desktop\\ProjetoGamer\\wwwroot\\",
+      "BasePath": "_content/Gamer_BancoDeDados",
+      "RelativePath": "img/Equipes/palmeiras.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Equipes\\palmeiras.jpg"
     },
     {
       "Identity": "C:\\Users\\49802002810\\Desktop\\ProjetoGamer\\wwwroot\\img\\Equipes\\santos.png",

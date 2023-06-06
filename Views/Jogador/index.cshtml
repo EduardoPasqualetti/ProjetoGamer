@@ -18,7 +18,7 @@
     <input type="password" name="Senha">
 
     <label for="">Id da Equipe</label>
-    <input type="text" name="IdEquipe">
+    <input type="number" name="IdEquipe">
 
     <button type="submit">Cadastrar</button>
 
@@ -29,8 +29,9 @@
         <th>Id</th>
         <th>Nome</th>
         <th>Email</th>
-        <th>IdEquipe</th>
-        @* <th>Ações</th> *@
+        <th>Equipe</th>
+        <th>Excluir</th>
+        <th>Editar</th> 
     </tr>
 
     <tbody>
@@ -41,17 +42,16 @@
                 <td>@jogadores.IdJogador</td>
                 <td>@jogadores.Nome</td>
                 <td>@jogadores.Email</td>
-                <td>@jogadores.IdEquipe</td>
-                @* <td>
-                    <img src="/img/Equipes/@equipe.Imagem" alt="Imagem da equipe @equipe.Nome" width="50px">
-                </td> *@
-                @*excluir uma equipe*@
-                @* <td>
-                    <a asp-area="" asp-controller="Equipe" asp-action="Excluir" asp-route-id="@equipe.IdEquipe" >Excluir</a>
+                <td>
+                    <img src="/img/Equipes/@jogadores.Equipe.Imagem" alt="Imagem da Equipe @jogadores.IdEquipe" width="50px">
+                </td>
+                @* <td>@jogadores.IdEquipe</td> *@
+                <td>
+                    <a asp-area="" asp-controller="Jogador" asp-action="Excluir" asp-route-id="@jogadores.IdJogador">Excluir</a>
                 </td>
                 <td>
-                    <a asp-area="" asp-controller="Equipe" asp-action="Editar" asp-route-id="@equipe.IdEquipe">Editar</a>
-                </td> *@
+                    <a asp-area="" asp-controller="Jogador" asp-action="Editar" asp-route-id="@jogadores.IdJogador">Editar</a>
+                </td> 
             </tr>
         }
 
