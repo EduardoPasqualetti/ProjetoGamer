@@ -30,6 +30,7 @@ namespace Gamer_BancoDeDados.Controllers
         [Route("Cadastrar")]
         public IActionResult Cadastrar(IFormCollection form)
         {
+            ViewBag.Equipe = c.Equipe.ToList();
 
             Jogador novoJogador = new Jogador();
 
@@ -69,6 +70,7 @@ namespace Gamer_BancoDeDados.Controllers
             Jogador jogador = c.Jogador.First(x => x.IdJogador == id);
 
             ViewBag.Jogador = jogador;
+            ViewBag.Equipe = c.Equipe.ToList();
 
             return View("Edit");
 

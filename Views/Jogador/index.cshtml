@@ -17,8 +17,18 @@
     <label for="">Senha</label>
     <input type="password" name="Senha">
 
-    <label for="">Id da Equipe</label>
-    <input type="number" name="IdEquipe">
+    <label for="">Equipe</label>
+    <select name="IdEquipe" id="IdEquipe">
+
+        <option value="0">Selecione uma opcao:</option>
+
+        @foreach (Equipe equipe in ViewBag.Equipe)
+        {
+
+            <option value="@equipe.IdEquipe">@equipe.Nome</option>
+
+        }
+    </select>
 
     <button type="submit">Cadastrar</button>
 
@@ -31,7 +41,7 @@
         <th>Email</th>
         <th>Equipe</th>
         <th>Excluir</th>
-        <th>Editar</th> 
+        <th>Editar</th>
     </tr>
 
     <tbody>
@@ -43,15 +53,18 @@
                 <td>@jogadores.Nome</td>
                 <td>@jogadores.Email</td>
                 <td>
-                    <img src="/img/Equipes/@jogadores.Equipe.Imagem" alt="Imagem da Equipe @jogadores.IdEquipe" width="50px">
+                    <img src="/img/Equipes/@jogadores.Equipe.Imagem" alt="Imagem da Equipe @jogadores.IdEquipe"
+                        width="50px">
                 </td>
                 @* <td>@jogadores.IdEquipe</td> *@
                 <td>
-                    <a asp-area="" asp-controller="Jogador" asp-action="Excluir" asp-route-id="@jogadores.IdJogador">Excluir</a>
+                    <a asp-area="" asp-controller="Jogador" asp-action="Excluir"
+                        asp-route-id="@jogadores.IdJogador">Excluir</a>
                 </td>
                 <td>
-                    <a asp-area="" asp-controller="Jogador" asp-action="Editar" asp-route-id="@jogadores.IdJogador">Editar</a>
-                </td> 
+                    <a asp-area="" asp-controller="Jogador" asp-action="Editar"
+                        asp-route-id="@jogadores.IdJogador">Editar</a>
+                </td>
             </tr>
         }
 
