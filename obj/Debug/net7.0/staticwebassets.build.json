@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "A1Y2ZADJQKJ57EH0e3PZH/588X2bkzHcWsD4ey9X30Y=",
+  "Hash": "paY86LcHKG7q9NLBGvN9ZP+hLPTksVkHK3Jvu/qoJ6s=",
   "Source": "Gamer_BancoDeDados",
   "BasePath": "_content/Gamer_BancoDeDados",
   "Mode": "Default",
@@ -1069,6 +1069,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\equipes.css"
+    },
+    {
+      "Identity": "C:\\Users\\49802002810\\Desktop\\ProjetoGamer\\wwwroot\\css\\Header-Footer.css",
+      "SourceId": "Gamer_BancoDeDados",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\49802002810\\Desktop\\ProjetoGamer\\wwwroot\\",
+      "BasePath": "_content/Gamer_BancoDeDados",
+      "RelativePath": "css/Header-Footer.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Header-Footer.css"
     },
     {
       "Identity": "C:\\Users\\49802002810\\Desktop\\ProjetoGamer\\wwwroot\\css\\login.css",
