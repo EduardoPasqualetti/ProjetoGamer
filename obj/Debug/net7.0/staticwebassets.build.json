@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "0AsnCrAE5R0QQ9W9J6iWiiKdJ1gHiHb5O0eVQYv2A5E=",
+  "Hash": "9bLAvXmOWrJJUGs0DAr6X6zBKIDzbzyijzhulHJ9U+c=",
   "Source": "Gamer_BancoDeDados",
   "BasePath": "_content/Gamer_BancoDeDados",
   "Mode": "Default",
@@ -746,6 +746,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\green-play.svg"
+    },
+    {
+      "Identity": "C:\\Users\\49802002810\\Desktop\\ProjetoGamer\\wwwroot\\assets\\Icon_edit.png",
+      "SourceId": "Gamer_BancoDeDados",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\49802002810\\Desktop\\ProjetoGamer\\wwwroot\\",
+      "BasePath": "_content/Gamer_BancoDeDados",
+      "RelativePath": "assets/Icon_edit.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\Icon_edit.png"
     },
     {
       "Identity": "C:\\Users\\49802002810\\Desktop\\ProjetoGamer\\wwwroot\\assets\\instagram-yellow.svg",
